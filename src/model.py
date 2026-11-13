@@ -96,6 +96,7 @@ def make_eda(df):
     ax.tick_params(axis="x", rotation=15)
     fig.tight_layout()
     fig.savefig(PLOTS / "bar_mean_grade_by_studytime.png", dpi=160)
+    fig.savefig(PLOTS / "bar_mean_grade_by_studytime.svg")
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -104,6 +105,7 @@ def make_eda(df):
            xlabel="Final grade (0-20)", ylabel="Number of students")
     fig.tight_layout()
     fig.savefig(PLOTS / "histogram_final_grade.png", dpi=160)
+    fig.savefig(PLOTS / "histogram_final_grade.svg")
     plt.close(fig)
 
     scatter_items = [
@@ -121,6 +123,7 @@ def make_eda(df):
         ax.set(title=label + " and final grade", xlabel=label, ylabel="G3 (0-20)")
         fig.tight_layout()
         fig.savefig(PLOTS / filename, dpi=160)
+        fig.savefig(PLOTS / filename.replace(".png", ".svg"))
         plt.close(fig)
 
     box_data = [
@@ -128,12 +131,13 @@ def make_eda(df):
         for label in STUDY_LABELS.values()
     ]
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.boxplot(box_data, tick_labels=list(STUDY_LABELS.values()))
+    ax.boxplot(box_data, labels=list(STUDY_LABELS.values()))
     ax.set(title="Final-grade spread by weekly study-time band",
            xlabel="Weekly study-time band", ylabel="G3 (0-20)")
     ax.tick_params(axis="x", rotation=15)
     fig.tight_layout()
     fig.savefig(PLOTS / "boxplot_grade_by_studytime.png", dpi=160)
+    fig.savefig(PLOTS / "boxplot_grade_by_studytime.svg")
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(7, 5))
@@ -141,6 +145,7 @@ def make_eda(df):
     ax.set_title("Correlation heatmap of selected academic variables")
     fig.tight_layout()
     fig.savefig(PLOTS / "correlation_heatmap.png", dpi=160)
+    fig.savefig(PLOTS / "correlation_heatmap.svg")
     plt.close(fig)
 
     correlations = numeric.corr()[TARGET].drop(TARGET).sort_values(ascending=False)
@@ -229,6 +234,7 @@ def train_evaluate(df):
     ax.legend()
     fig.tight_layout()
     fig.savefig(PLOTS / "actual_vs_predicted.png", dpi=160)
+    fig.savefig(PLOTS / "actual_vs_predicted.svg")
     plt.close(fig)
     return metrics
 
