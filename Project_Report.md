@@ -28,13 +28,14 @@ The selected columns contain 649 records, no missing values, and no missing targ
 
 ## 5. Exploratory data analysis
 The mean G3 is 11.906, the median is 12.000 and standard deviation is 3.231. Correlations with G3 are G2: 0.919, G1: 0.826, studytime: 0.250, and absences: -0.091. Charts are provided in outputs/visualizations:
-- bar_mean_grade_by_studytime.svg
-- histogram_final_grade.svg
-- scatter_studytime_vs_final_grade.svg
-- scatter_absences_vs_final_grade.svg
-- scatter_g2_vs_final_grade.svg
-- boxplot_grade_by_studytime.svg
-- correlation_heatmap.svg
+- `bar_mean_grade_by_studytime.svg`
+- `histogram_final_grade.svg`
+- `scatter_studytime_vs_final_grade.svg`
+- `scatter_absences_vs_final_grade.svg`
+- `scatter_g2_vs_final_grade.svg`
+- `boxplot_grade_by_studytime.svg`
+- `correlation_heatmap.svg`
+- `actual_vs_predicted.svg`
 
 ## 6. Machine learning methodology
 Target: G3. Predictors: studytime, absences, G1 and G2. An 80/20 split with random_state=42 produced 519 training rows and 130 held-out test rows. The model uses a Scikit-learn Pipeline with median imputation, standard scaling and Linear Regression. GridSearchCV tested fit_intercept=True and False using shuffled 5-fold cross-validation on the training partition only. Transformations are fitted within the pipeline to avoid test-data leakage.
