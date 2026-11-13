@@ -2,77 +2,74 @@
   "cleaning": {
     "rows_before_cleaning": 649,
     "rows_after_cleaning": 649,
-    "exact_duplicate_rows_in_full_33_column_source": 0,
-    "repeated_profiles_in_selected_5_columns": 108,
-    "repeated_profiles_removed": 0,
-    "missing_values_in_required_columns": 0,
-    "rows_removed_for_missing_target": 0
+    "exact_duplicate_rows_found_in_full_33_column_source": 0,
+    "repeated_combinations_in_selected_working_columns": 109,
+    "repeated_combinations_removed": 0,
+    "missing_values_in_required_columns_before_cleaning": 0,
+    "rows_removed_for_missing_target": 0,
+    "rows_removed_as_exact_duplicates": 0
   },
   "eda": {
-    "mean_G3": 11.906009244992296,
-    "median_G3": 12,
-    "std_G3": 3.2306562428048045,
+    "mean_final_grade": 11.906009244992296,
+    "median_final_grade": 12,
+    "std_final_grade": 3.230656242804805,
     "correlations_with_G3": {
-      "studytime": 0.24978868999886106,
-      "absences": -0.09137905643875698,
-      "G1": 0.8263871247890491,
-      "G2": 0.9185480035603509
+      "G2": 0.9185480035603523,
+      "G1": 0.8263871247890486,
+      "studytime": 0.24978868999886306,
+      "absences": -0.09137905643875596
     },
-    "studytime_groups": [
+    "studytime_summary": [
       {
-        "studytime": 1,
-        "label": "<2 hours",
-        "count": 212,
-        "mean": 10.84433962264151,
-        "median": 11,
-        "std": 3.2186241265478737
-      },
-      {
-        "studytime": 2,
-        "label": "2-5 hours",
+        "studytime_band": "2-5 hours/week",
         "count": 305,
-        "mean": 12.091803278688525,
+        "mean": 12.092,
         "median": 12,
-        "std": 3.2431250707198034
+        "std": 3.243
       },
       {
-        "studytime": 3,
-        "label": "5-10 hours",
+        "studytime_band": "5-10 hours/week",
         "count": 97,
-        "mean": 13.22680412371134,
+        "mean": 13.227,
         "median": 13,
-        "std": 2.502103925695897
+        "std": 2.502
       },
       {
-        "studytime": 4,
-        "label": ">10 hours",
+        "studytime_band": "<2 hours/week",
+        "count": 212,
+        "mean": 10.844,
+        "median": 11,
+        "std": 3.219
+      },
+      {
+        "studytime_band": ">10 hours/week",
         "count": 35,
-        "mean": 13.057142857142857,
+        "mean": 13.057,
         "median": 13,
-        "std": 3.0384095795513226
+        "std": 3.038
       }
     ],
-    "absence_groups": [
+    "absence_summary": [
       {
-        "absence_group": "0-3",
+        "absence_group": "0-3 absences",
         "count": 373,
-        "mean": 12.067024128686327,
+        "mean": 12.067,
         "median": 12,
-        "std": 3.6350017366928884
+        "std": 3.635
       },
       {
-        "absence_group": "4-10",
+        "absence_group": "4-10 absences",
         "count": 227,
-        "mean": 11.911894273127754,
+        "mean": 11.912,
         "median": 11,
-        "std": 2.5575135580074324
+        "std": 2.558
       },
       {
-        "absence_group": ">10",
+        "absence_group": "More than 10",
         "count": 49,
-        "mean": 10.653061224489797,
+        "mean": 10.653,
         "median": 10,
-        "std": 2.4285714285714293
+        "std": 2.429
       }
     ]
   },
@@ -88,15 +85,15 @@
     "train_rows": 519,
     "test_rows": 130,
     "random_state": 42,
-    "test_MAE": 0.7475731135931952,
-    "test_RMSE": 1.1709255221350034,
-    "test_R2": 0.8594025316452119,
-    "cross_validation_MAE_mean": 0.8143787305438142,
-    "cross_validation_MAE_std": 0.10379786746089209,
-    "cross_validation_R2_mean": 0.8409818954103718,
+    "test_MAE": 0.7477392675349168,
+    "test_RMSE": 1.1713573177973222,
+    "test_R2": 0.8592988178401071,
+    "cross_validation_MAE_mean": 0.8162519083169416,
+    "cross_validation_MAE_std": 0.107291461792493,
+    "cross_validation_R2_mean": 0.8406963155572083,
     "best_parameters": {
       "regression__fit_intercept": true
     },
-    "best_cv_MAE": 0.8143787305438142
+    "best_cv_MAE": 0.8162519083169416
   }
 }
