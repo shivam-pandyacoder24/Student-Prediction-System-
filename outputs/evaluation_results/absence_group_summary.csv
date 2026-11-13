@@ -1,0 +1,4 @@
+absence_group,count,mean,median,std
+0-3 absences,373,12.067,12.0,3.635
+4-10 absences,227,11.912,11.0,2.558
+More than 10,49,10.653,10.0,2.429
