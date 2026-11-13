@@ -1,0 +1,5 @@
+studytime_band,count,mean,median,std
+<2 hours/week,212,10.844,11.0,3.219
+2-5 hours/week,305,12.092,12.0,3.243
+5-10 hours/week,97,13.227,13.0,2.502
+>10 hours/week,35,13.057,13.0,3.038
