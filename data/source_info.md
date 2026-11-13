@@ -16,6 +16,6 @@ This project uses selected academic columns from the **Student Performance** dat
 | `G2` | Second-period grade. |
 | `G3` | Final-period grade and prediction target, on a 0-20 scale. |
 
-The official dataset covers student achievement at two Portuguese schools. The original full dataset has 649 records and no missing values. Earlier-period grades G1 and G2 are strongly correlated with G3. Accordingly, the model is only suitable once those earlier grades are available; it is not an early-semester prediction model.
+The official dataset covers student achievement at two Portuguese schools. The original full dataset has 649 records and 33 columns. A check of the included file found 0 exact duplicate data rows and 0 blank cells. Earlier-period grades G1 and G2 are strongly correlated with G3. Accordingly, the model is only suitable once those earlier grades are available; it is not an early-semester prediction model.
 
 The dataset does not contain exact study hours or attendance percentages. No such values are fabricated or inferred.
