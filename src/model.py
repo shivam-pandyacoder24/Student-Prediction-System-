@@ -131,7 +131,7 @@ def make_eda(df):
         for label in STUDY_LABELS.values()
     ]
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.boxplot(box_data, labels=list(STUDY_LABELS.values()))
+    ax.boxplot(box_data, tick_labels=list(STUDY_LABELS.values()))
     ax.set(title="Final-grade spread by weekly study-time band",
            xlabel="Weekly study-time band", ylabel="G3 (0-20)")
     ax.tick_params(axis="x", rotation=15)
