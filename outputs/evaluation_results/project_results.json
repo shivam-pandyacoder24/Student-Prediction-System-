@@ -2,76 +2,28 @@
   "cleaning": {
     "rows_before_cleaning": 649,
     "rows_after_cleaning": 649,
-    "exact_duplicate_rows_found_in_full_33_column_source": 0,
-    "repeated_combinations_in_selected_working_columns": 109,
-    "repeated_combinations_removed": 0,
     "missing_values_in_required_columns_before_cleaning": 0,
     "rows_removed_for_missing_target": 0,
-    "rows_removed_as_exact_duplicates": 0
+    "exact_duplicate_rows_in_full_source": 0,
+    "repeated_profiles_in_selected_columns_retained": 109,
+    "features": [
+      "studytime",
+      "absences",
+      "G1",
+      "G2"
+    ],
+    "target": "G3"
   },
   "eda": {
-    "mean_final_grade": 11.906009244992296,
-    "median_final_grade": 12,
-    "std_final_grade": 3.230656242804805,
+    "mean_G3": 11.906009244992296,
+    "median_G3": 12.0,
+    "std_G3": 3.230656242804805,
     "correlations_with_G3": {
       "G2": 0.9185480035603523,
       "G1": 0.8263871247890486,
       "studytime": 0.24978868999886306,
       "absences": -0.09137905643875596
-    },
-    "studytime_summary": [
-      {
-        "studytime_band": "2-5 hours/week",
-        "count": 305,
-        "mean": 12.092,
-        "median": 12,
-        "std": 3.243
-      },
-      {
-        "studytime_band": "5-10 hours/week",
-        "count": 97,
-        "mean": 13.227,
-        "median": 13,
-        "std": 2.502
-      },
-      {
-        "studytime_band": "<2 hours/week",
-        "count": 212,
-        "mean": 10.844,
-        "median": 11,
-        "std": 3.219
-      },
-      {
-        "studytime_band": ">10 hours/week",
-        "count": 35,
-        "mean": 13.057,
-        "median": 13,
-        "std": 3.038
-      }
-    ],
-    "absence_summary": [
-      {
-        "absence_group": "0-3 absences",
-        "count": 373,
-        "mean": 12.067,
-        "median": 12,
-        "std": 3.635
-      },
-      {
-        "absence_group": "4-10 absences",
-        "count": 227,
-        "mean": 11.912,
-        "median": 11,
-        "std": 2.558
-      },
-      {
-        "absence_group": "More than 10",
-        "count": 49,
-        "mean": 10.653,
-        "median": 10,
-        "std": 2.429
-      }
-    ]
+    }
   },
   "model_evaluation": {
     "model": "Linear Regression",
