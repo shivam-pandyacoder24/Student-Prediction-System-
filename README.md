@@ -47,7 +47,7 @@ Student-Prediction-System-/
 │   ├── visualizations/
 │   └── linear_regression_pipeline.joblib
 ├── screenshots/
-│   └── output_evidence_montage.jpg
+│   └── output_evidence_montage.svg
 ├── Project_Report.pdf
 ├── README.md
 └── requirements.txt
@@ -99,8 +99,8 @@ The imputer and scaler are part of a Scikit-learn pipeline. They are fitted only
 | Test MAE | 0.748 |
 | Test RMSE | 1.171 |
 | Test R-squared | 0.859 |
-| 5-fold CV MAE (mean) | 0.814 |
-| 5-fold CV MAE (standard deviation) | 0.104 |
+| 5-fold CV MAE (mean) | 0.816 |
+| 5-fold CV MAE (standard deviation) | 0.107 |
 | 5-fold CV R-squared (mean) | 0.841 |
 
 The held-out results indicate that, on this random split, predictions were typically within about 0.75 grade points of the actual `G3` value. R-squared is approximately 0.859 on the test partition. These are results for this dataset and split, not a guarantee of future performance.
