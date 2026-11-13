@@ -6,7 +6,8 @@ This project uses selected academic columns from the **Student Performance** dat
 - DOI: https://doi.org/10.24432/C5TG7T
 - Original authors: Paulo Cortez and Alice Silva (2008).
 - License: Creative Commons Attribution 4.0 International (CC BY 4.0), as stated by UCI.
-- Original file: `student-por.csv`; the project CSV is a five-column working extract.
+- Complete original file included in this repository: `data/student-por.csv` (649 records, 33 columns, semicolon-delimited).
+- Modeling input included separately: `data/student_performance_dataset.csv` (649 records and the selected five model columns).
 
 | Field | Meaning |
 |---|---|
