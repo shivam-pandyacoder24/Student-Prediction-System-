@@ -19,7 +19,7 @@ Academic performance is associated with learning habits, attendance patterns and
 - Interpret findings, limitations and possible improvements.
 
 ## 3. Dataset and source
-The data is from the UCI Machine Learning Repository's Student Performance dataset, Portuguese-course file (649 records). Original authors: Paulo Cortez and Alice Silva (2008). DOI: 10.24432/C5TG7T. License: CC BY 4.0. The working CSV is a five-column extract: studytime, absences, G1, G2 and G3. See data/source_info.md for attribution.
+The data is from the UCI Machine Learning Repository's Student Performance dataset, Portuguese-course file (649 records). Original authors: Paulo Cortez and Alice Silva (2008). DOI: 10.24432/C5TG7T. License: CC BY 4.0. The complete original semicolon-delimited CSV is included as `data/student-por.csv` (649 records and all 33 original fields). The separate `data/student_performance_dataset.csv` is the five-column modeling extract: studytime, absences, G1, G2 and G3. The included original file was checked and contains 0 exact duplicate rows and 0 blank cells. See data/source_info.md for attribution.
 
 **Variable meanings:** studytime is a weekly time band (1: <2 hours; 2: 2-5 hours; 3: 5-10 hours; 4: >10 hours); absences is an absence count (not attendance percentage); G1 and G2 are earlier-period grades; G3 is final-period grade on a 0-20 scale.
 
