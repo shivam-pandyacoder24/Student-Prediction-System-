@@ -10,14 +10,14 @@
   "train_rows": 519,
   "test_rows": 130,
   "random_state": 42,
-  "test_MAE": 0.7475731135931952,
-  "test_RMSE": 1.1709255221350034,
-  "test_R2": 0.8594025316452119,
-  "cross_validation_MAE_mean": 0.8143787305438142,
-  "cross_validation_MAE_std": 0.10379786746089209,
-  "cross_validation_R2_mean": 0.8409818954103718,
+  "test_MAE": 0.7477392675349168,
+  "test_RMSE": 1.1713573177973222,
+  "test_R2": 0.8592988178401071,
+  "cross_validation_MAE_mean": 0.8162519083169416,
+  "cross_validation_MAE_std": 0.107291461792493,
+  "cross_validation_R2_mean": 0.8406963155572083,
   "best_parameters": {
     "regression__fit_intercept": true
   },
-  "best_cv_MAE": 0.8143787305438142
+  "best_cv_MAE": 0.8162519083169416
 }
