@@ -49,7 +49,25 @@ Target: G3. Predictors: studytime, absences, G1 and G2. An 80/20 split with rand
 | 5-fold CV MAE standard deviation | 0.107 |
 | 5-fold CV R-squared mean | 0.841 |
 
-The held-out predictions are typically within about 0.75 grade points on this split. The complete model implementation writes individual actual and predicted G3 values to outputs/evaluation_results/test_predictions.csv after running src/model.py.
+The held-out predictions are typically within about 0.75 grade points on this split.
+
+### Sample actual versus predicted marks
+The following rows are examples from the held-out test partition. The complete 130-row prediction file is generated at outputs/evaluation_results/test_predictions.csv when the script is run.
+
+| Test row | Actual G3 | Predicted G3 | Absolute error |
+|---:|---:|---:|---:|
+| 2 | 12 | 13.36 | 1.36 |
+| 6 | 13 | 12.52 | 0.48 |
+| 10 | 14 | 14.52 | 0.52 |
+| 24 | 10 | 11.25 | 1.25 |
+| 30 | 11 | 11.08 | 0.08 |
+| 31 | 15 | 15.58 | 0.58 |
+| 39 | 12 | 13.66 | 1.66 |
+| 41 | 11 | 11.15 | 0.15 |
+| 44 | 11 | 11.42 | 0.42 |
+| 49 | 12 | 12.57 | 0.57 |
+
+The complete project implementation writes individual actual and predicted G3 values to outputs/evaluation_results/test_predictions.csv after running src/model.py.
 
 ## 8. Findings and interpretation
 G2 has the strongest linear relationship with G3, followed by G1. The study-time category has a smaller positive association, and absences have a weak negative association. These are observed relationships, not evidence of cause and effect. G1 and G2 are known only after earlier assessments and therefore make this a later-period prediction model.
