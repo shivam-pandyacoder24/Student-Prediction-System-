@@ -44,6 +44,10 @@ Student-Prediction-System-/
 │   └── model.py
 ├── outputs/
 │   ├── evaluation_results/
+│   │   ├── test_predictions.csv
+│   │   ├── cross_validation_results.csv
+│   │   ├── hyperparameter_search_results.csv
+│   │   └── evaluation_summary.json
 │   ├── visualizations/
 │   └── linear_regression_pipeline.joblib
 ├── screenshots/
@@ -140,11 +144,11 @@ Cortez, P., & Silva, A. (2008). *Using data mining to predict secondary school s
 
 ## Project report
 
-The full report is available as [Project_Report.pdf](Project_Report.pdf), with its editable Markdown source in [Project_Report.md](Project_Report.md). The PDF is regenerated from the Markdown report and the repository's SVG charts by the GitHub Actions workflow when the report source changes.
+The full report is available as [Project_Report.pdf](Project_Report.pdf), with its editable Markdown source in [Project_Report.md](Project_Report.md). The PDF is regenerated from the Markdown report and embeds the project's SVG charts through the GitHub Actions workflow when the report source changes.
 
 ## Output evidence
 
-The charts are in `outputs/visualizations/`. A compact overview is in [screenshots/output_evidence_montage.svg](screenshots/output_evidence_montage.svg). The report's model metrics and prediction examples are also available under `outputs/evaluation_results/`.
+The charts are in `outputs/visualizations/` and the screenshots are in `screenshots/`. A compact overview is in [screenshots/output_evidence_montage.svg](screenshots/output_evidence_montage.svg). The complete held-out predictions for all 130 test records are in [outputs/evaluation_results/test_predictions.csv](outputs/evaluation_results/test_predictions.csv). Five-fold scores, parameter-search results and the test metrics are also stored under `outputs/evaluation_results/`. The fitted preprocessing and Linear Regression pipeline is saved at `outputs/linear_regression_pipeline.joblib`.
 
 ## Demonstration
 
