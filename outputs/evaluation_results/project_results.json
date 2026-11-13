@@ -1,0 +1,102 @@
+{
+  "cleaning": {
+    "rows_before_cleaning": 649,
+    "rows_after_cleaning": 649,
+    "exact_duplicate_rows_in_full_33_column_source": 0,
+    "repeated_profiles_in_selected_5_columns": 108,
+    "repeated_profiles_removed": 0,
+    "missing_values_in_required_columns": 0,
+    "rows_removed_for_missing_target": 0
+  },
+  "eda": {
+    "mean_G3": 11.906009244992296,
+    "median_G3": 12,
+    "std_G3": 3.2306562428048045,
+    "correlations_with_G3": {
+      "studytime": 0.24978868999886106,
+      "absences": -0.09137905643875698,
+      "G1": 0.8263871247890491,
+      "G2": 0.9185480035603509
+    },
+    "studytime_groups": [
+      {
+        "studytime": 1,
+        "label": "<2 hours",
+        "count": 212,
+        "mean": 10.84433962264151,
+        "median": 11,
+        "std": 3.2186241265478737
+      },
+      {
+        "studytime": 2,
+        "label": "2-5 hours",
+        "count": 305,
+        "mean": 12.091803278688525,
+        "median": 12,
+        "std": 3.2431250707198034
+      },
+      {
+        "studytime": 3,
+        "label": "5-10 hours",
+        "count": 97,
+        "mean": 13.22680412371134,
+        "median": 13,
+        "std": 2.502103925695897
+      },
+      {
+        "studytime": 4,
+        "label": ">10 hours",
+        "count": 35,
+        "mean": 13.057142857142857,
+        "median": 13,
+        "std": 3.0384095795513226
+      }
+    ],
+    "absence_groups": [
+      {
+        "absence_group": "0-3",
+        "count": 373,
+        "mean": 12.067024128686327,
+        "median": 12,
+        "std": 3.6350017366928884
+      },
+      {
+        "absence_group": "4-10",
+        "count": 227,
+        "mean": 11.911894273127754,
+        "median": 11,
+        "std": 2.5575135580074324
+      },
+      {
+        "absence_group": ">10",
+        "count": 49,
+        "mean": 10.653061224489797,
+        "median": 10,
+        "std": 2.4285714285714293
+      }
+    ]
+  },
+  "model_evaluation": {
+    "model": "Linear Regression",
+    "input_features": [
+      "studytime",
+      "absences",
+      "G1",
+      "G2"
+    ],
+    "target": "G3",
+    "train_rows": 519,
+    "test_rows": 130,
+    "random_state": 42,
+    "test_MAE": 0.7475731135931952,
+    "test_RMSE": 1.1709255221350034,
+    "test_R2": 0.8594025316452119,
+    "cross_validation_MAE_mean": 0.8143787305438142,
+    "cross_validation_MAE_std": 0.10379786746089209,
+    "cross_validation_R2_mean": 0.8409818954103718,
+    "best_parameters": {
+      "regression__fit_intercept": true
+    },
+    "best_cv_MAE": 0.8143787305438142
+  }
+}
