@@ -36,7 +36,8 @@ The original UCI CSV is included as `data/student-por.csv`. The working CSV is a
 ```text
 Student-Prediction-System-/
 ├── data/
-│   ├── student_performance_dataset.csv
+│   ├── student-por.csv                 # complete original 33-column CSV
+│   ├── student_performance_dataset.csv # five-column modeling extract
 │   └── source_info.md
 ├── notebooks/
 │   └── student_performance_analysis.ipynb
