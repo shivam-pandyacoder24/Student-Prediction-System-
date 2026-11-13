@@ -14,10 +14,10 @@ The model uses four predictors: `studytime` (weekly study-time category), `absen
 - DOI: [10.24432/C5TG7T](https://doi.org/10.24432/C5TG7T)
 - Original authors: Paulo Cortez and Alice Silva (2008)
 - License: Creative Commons Attribution 4.0 International (CC BY 4.0)
-- Included working file: `data/student_performance_dataset.csv` (649 records; selected columns only)
+- Complete original CSV: `data/student-por.csv` (649 records and all 33 original columns; semicolon-delimited, as supplied by the UCI dataset source).\n- Modeling input: `data/student_performance_dataset.csv` (649 records; selected five columns: `studytime`, `absences`, `G1`, `G2`, `G3`).
 - Source and variable notes: [`data/source_info.md`](data/source_info.md)
 
-The working CSV is a five-column extract of the UCI Portuguese-course file. The complete original dataset contains additional demographic and school-related attributes that are not used in this model. The dataset describes secondary-school students from two Portuguese schools; it should not be treated as a representative sample of all students.
+The original UCI CSV is included as `data/student-por.csv`. The working CSV is a five-column extract of the UCI Portuguese-course file. The complete original dataset contains additional demographic and school-related attributes that are not used in this model. The dataset describes secondary-school students from two Portuguese schools; it should not be treated as a representative sample of all students.
 
 **Important measurement notes:** `studytime` is an ordinal weekly band, not an exact number of hours. `absences` is a count, not an attendance percentage. The project does not invent conversions for either field.
 
