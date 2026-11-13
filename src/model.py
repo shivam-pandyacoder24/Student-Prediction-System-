@@ -1,6 +1,6 @@
 """Student Performance Analysis and Prediction System.
 The selected UCI Portuguese-course columns use weekly study-time bands,
-absence counts and two earlier-period grades to estimate the final grade.
+absence counts and two earlier-period grades to estimate the final grade.\nThe script writes reproducible EDA, full test predictions and metrics.
 """
 from pathlib import Path
 import json
