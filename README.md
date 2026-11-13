@@ -48,7 +48,7 @@ Student-Prediction-System-/
 │   └── linear_regression_pipeline.joblib
 ├── screenshots/
 │   └── output_evidence_montage.svg
-├── Project_Report.pdf
+├── Project_Report.md
 ├── README.md
 └── requirements.txt
 ```
@@ -131,3 +131,5 @@ This model is an educational analysis aid, not a final judgment about a student'
 ## References
 
 Cortez, P., & Silva, A. (2008). *Using data mining to predict secondary school student performance*. In Proceedings of the 5th Future Business Technology Conference (FUBUTEC 2008), 5-12. Dataset: [UCI Machine Learning Repository - Student Performance](https://doi.org/10.24432/C5TG7T). Licensed under CC BY 4.0.
+
+**Submission note:** `Project_Report.md` is available in this repository. A PDF copy is included in the downloadable project package; add `Project_Report.pdf` at the repository root before final submission.
